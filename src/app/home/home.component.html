@@ -3,7 +3,6 @@
     <a routerLink="/home">HOME</a>
     <a routerLink="/about">ÜBER BELEGO</a>
     <a [matMenuTriggerFor]="solutions1">LÖSUNGEN</a>
-    <a routerLink="/kontakt">KONTAKT</a>
   </div>
   <mat-menu #menu="matMenu">
     <button mat-menu-item routerLink="/home" matTooltip="Home">
@@ -22,14 +21,6 @@
       <mat-icon>build</mat-icon>
       <span>LÖSUNGEN</span>
     </button>
-    <button
-      mat-menu-item
-      routerLink="/kontakt"
-      matTooltip="So erreichen Sie uns"
-    >
-      <mat-icon>mail</mat-icon>
-      <span>KONTAKT</span>
-    </button>
   </mat-menu>
   <button mat-icon-button [matMenuTriggerFor]="menu" class="mobile-nav">
     <mat-icon>menu</mat-icon>
@@ -38,11 +29,10 @@
 
 <div class="title">
   <p>
-    <img src="assets/home_title_xmas.png">
+    <span style="font-weight: bold">BELEGO</span>
+    <!-- <img src="assets/home_title_xmas.png" /> -->
     <br />
-    <span style="font-size: 0.6em">
-      Belege kostenlos erstellen
-    </span>
+    <span style="font-size: 0.6em"> Belege kostenlos erstellen </span>
   </p>
 </div>
 

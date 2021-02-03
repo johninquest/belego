@@ -11,9 +11,8 @@ import { HomeComponent } from "./home/home.component";
 import { GuestComponent } from "./guest/guest.component";
 import { InvoiceComponent } from "./invoice/invoice.component";
 import { AboutComponent } from "./about/about.component";
-import { ContactComponent } from "./contact/contact.component";
-import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
+import { ServiceWorkerModule } from "@angular/service-worker";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [
@@ -22,7 +21,6 @@ import { environment } from '../environments/environment';
     GuestComponent,
     InvoiceComponent,
     AboutComponent,
-    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +30,9 @@ import { environment } from '../environments/environment';
     FormsModule,
     ReactiveFormsModule,
     MaterialModules,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register("ngsw-worker.js", {
+      enabled: environment.production,
+    }),
   ],
   providers: [
     { provide: LOCALE_ID, useValue: "de" },
