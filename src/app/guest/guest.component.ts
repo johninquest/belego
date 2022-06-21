@@ -8,7 +8,7 @@ import {
   NgxMatDateFormats,
 } from "@angular-material-components/datetime-picker";
 import { PrintService } from "../services/print.service";
-import { COVID19_DISCLAIMER_SHORT } from "../data/disclaimers";
+import { COVID19_DISCLAIMER_SHORT } from "../shared/disclaimers";
 import { from } from "rxjs";
 
 export const MY_DATE_FORMATS: NgxMatDateFormats = {

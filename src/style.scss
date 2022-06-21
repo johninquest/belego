@@ -8,7 +8,7 @@ $mytheme-warn: mat-palette($mat-red, 500); // #F44336
 $mytheme-all: mat-light-theme($mytheme-primary, $mytheme-accent, $mytheme-warn);
 @include angular-material-theme($mytheme-all);
 
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 /* $myfont: 'Quicksand', sans-serif; */
 $myfont: "Lato", sans-serif;
 * {

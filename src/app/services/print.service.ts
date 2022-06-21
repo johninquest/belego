@@ -3,7 +3,7 @@ import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
 import jsPDF from "jspdf";
 import dayjs from "dayjs";
-import { COVID19_DISCLAIMER_SHORT } from "../data/disclaimers";
+import { COVID19_DISCLAIMER_SHORT } from "../shared/disclaimers";
 
 @Injectable({
   providedIn: "root",
@@ -127,15 +127,12 @@ export class PrintService {
   createInvoicePdfFromData(invoiceData: object) {
     let payment_number: string = invoiceData["paymentNumber"].toString(),
       payment_location: string = invoiceData["paymentLocation"],
-      payment_amount_before_tax: string = invoiceData[
-        "paymentAmountBeforeTax"
-      ].toString(),
-      payment_tax_percentage: string = invoiceData[
-        "paymentTaxPercentage"
-      ].toString(),
-      payment_amount_after_tax: string = invoiceData[
-        "paymentAmountAfterTax"
-      ].toString(),
+      payment_amount_before_tax: string =
+        invoiceData["paymentAmountBeforeTax"].toString(),
+      payment_tax_percentage: string =
+        invoiceData["paymentTaxPercentage"].toString(),
+      payment_amount_after_tax: string =
+        invoiceData["paymentAmountAfterTax"].toString(),
       payment_for: string = invoiceData["paymentFor"],
       payment_by: string = invoiceData["paymentBy"],
       payment_extra_details: string = invoiceData["paymentExtraDetails"];
